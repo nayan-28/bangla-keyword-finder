@@ -14,7 +14,7 @@ def generate_summary(bangla_text, stop_words):
     return summary
 
 # Take input from the user
-bangla_text = input("Enter your Bengali text: ")
+bangla_text = input("আপনার বক্তব্য প্রদান করুন: ")
 
 # Example stop words (you can customize this list)
 stop_words = set(stopwords.words('bengali'))
