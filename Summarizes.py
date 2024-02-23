@@ -13,8 +13,8 @@ def generate_summary(bangla_text, stop_words):
 
     return summary
 
-# Example Bangla text
-bangla_text = "বাংলা ভাষার প্রসার দুনিয়ায় উচ্চ মানের একটি কাজ। বাঙালি ভাষা, সাহিত্য, সংস্কৃতি এবং ইতিহাসে ঐতিহ্যবাহী। বাংলা ভাষায় লেখা বই, কবিতা, গান অত্যন্ত সমৃদ্ধ।"
+# Take input from the user
+bangla_text = input("Enter your Bengali text: ")
 
 # Example stop words (you can customize this list)
 stop_words = set(stopwords.words('bengali'))
@@ -23,7 +23,7 @@ stop_words = set(stopwords.words('bengali'))
 summary = generate_summary(bangla_text, stop_words)
 
 # Print the summary
-print("Original Text:")
+print("\nOriginal Text:")
 print(bangla_text)
 print("\nSummary:")
 print(summary)
