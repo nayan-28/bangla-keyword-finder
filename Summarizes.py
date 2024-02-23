@@ -22,8 +22,16 @@ stop_words = set(stopwords.words('bengali'))
 # Generate summary
 summary = generate_summary(bangla_text, stop_words)
 
+# List of key words to extract
+keywords_to_extract = ["জ্বর", "সর্দি", "কাশি", "ব্যাথা", "পায়ে ব্যাথা", "মাথা ব্যাথা", "মাথা যন্ত্রণা", "মাথা ঝিমঝিম"]
+
+# Extract keywords from the summary
+extracted_keywords = [keyword for keyword in keywords_to_extract if keyword in summary]
+
 # Print the summary
-print("\nOriginal Text:")
+print("\nআপনার প্রদানকৃত তথ্য:")
 print(bangla_text)
-print("\nSummary:")
+print("\nসারাংশ:")
 print(summary)
+print("\nআপনার সমস্যাগুলো:")
+print(extracted_keywords)
